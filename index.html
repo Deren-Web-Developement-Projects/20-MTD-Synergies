@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
+
+    <title>20 MTD: Synergies</title>
+</head>
+<body>
+    <div id="main">
+        <header id="header">
+            <div id="header-title"">
+                <p class="header-item moon">&#9789;</p>
+                <div id="header-title-main">
+                    <p class="header-item">20 Minutes Till Dawn:</p>
+                    <p class="header-item">Synergy Checklist</p>
+                </div>
+                <p class="header-item moon">&#9790;</p>
+            </div>
+            <nav id="navbar">
+                <div class="navbar-category">
+                    <div>
+                        <a class="navbar-item navbar-item-top" target="_blank" href="https://store.steampowered.com/app/1966900/20_Minutes_Till_Dawn/">Store Page</a>
+                    </div>
+                    <div>
+                        <a class="navbar-item navbar-item-top" target="_blank" href="https://steamcommunity.com/app/1966900">Steam Community</a>
+                    </div>
+                </div>
+                <div class="navbar-category">
+                    <div id="navbar-clear">
+                        <p class="navbar-item" id="clear">Clear Selections</p>
+                    </div>
+                    <div id="navbar-top">
+                        <a class="navbar-item" href="#top">Top</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="top"></div>
+
+        <div id="page-description">
+            <p class="page-description-bullet">&#8226;</p>
+            <p>Check off your upgrades as you play</p>
+            <p class="page-description-bullet">&#8226;</p>
+            <p>Click "Clear Selections" to reset checkboxes</p>
+            <p class="page-description-bullet">&#8226;</p>
+            <p>Bold items are required</p>
+            <p class="page-description-bullet">&#8226;</p>
+        </div>
+
+        <div id="main-items">
+            <div id="item-5" class="item">
+                <div class="item-header">
+                    Frost Fire
+                </div>
+                <div class="item-description">
+                    <p>When you inflict freeze, also inflict Burn for 6 damage per second.</p>
+                </div>
+                <div class="item-upgrade">
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-5-1">
+                                <input class="checkbox-input" type="checkbox" id="item-5-1" name="selection-item" value="Pyro Mage" onclick="ToggleBoxes('pyro1')"> Pyro Mage
+                            </label>
+                        </div>
+                        <div>  
+                            <label class="checkbox-label impact" for="item-5-2">
+                                <input class="checkbox-input" type="checkbox" id="item-5-2" name="selection-item" value="Intense Burn"> Intense Burn
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-5-3">
+                                <input class="checkbox-input" type="checkbox" id="item-5-3" name="selection-item" value="Frost Mage"> Frost Mage
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-5-4">
+                                <input class="checkbox-input" type="checkbox" id="item-5-4" name="selection-item" value="Frostbite"> Frostbite
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="item-3" class="item">
+                <div class="item-header">
+                    Overload
+                </div>
+                <div class="item-description">
+                    <p>When lightning strikes an enemy that is Burning, 
+                        create an explosion that deals 25 damage.</p>
+                </div>
+                <div class="item-upgrade">
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-3-1">
+                                <input class="checkbox-input" type="checkbox" id="item-3-1" name="selection-item" value="Electro Mage"> Electro Mage
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-3-2">
+                                <input class="checkbox-input" type="checkbox" id="item-3-2" name="selection-item" value="Electro Bug"> Electro Bug
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-3-3">
+                                <input class="checkbox-input" type="checkbox" id="item-3-3" name="selection-item" value="Energized"> Energized
+                            </label>    
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-3-4">
+                                <input class="checkbox-input" type="checkbox" id="item-3-4" name="selection-item" value="Electro Mastery"> Electro Mastery
+                            </label>    
+                        </div>
+                    </div>
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-2-5">
+                                <input class="checkbox-input" type="checkbox" id="item-2-5" name="selection-item" value="Pyro Mage" onclick="ToggleBoxes('pyro2')"> Pyro Mage
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-2-6">
+                                <input class="checkbox-input" type="checkbox" id="item-2-6" name="selection-item" value="Fire Starter"> Fire Starter
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="item-1" class="item">
+                <div class="item-header">
+                    Summon Mastery
+                </div>
+                <div class="item-description">
+                    <p>Summon Damage: + 35%</p>
+                    <p>Summon Attack Speed: + 35%</p>
+                    <p>Bullet Damage: - 35%</p>
+                </div>
+                <div class="item-upgrade">
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-1-1">
+                                <input class="checkbox-input" type="checkbox" id="item-1-1" name="selection-item" value="Ghost Friend"> Ghost Friend
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-1-2">
+                                <input class="checkbox-input" type="checkbox" id="item-1-2" name="selection-item" value="Energentic Friends"> Energetic Friends
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-1-3">
+                                <input class="checkbox-input" type="checkbox" id="item-1-3" name="selection-item" value="In Sync"> In Sync
+                            </label>    
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-1-4">
+                                <input class="checkbox-input" type="checkbox" id="item-1-4" name="selection-item" value="Vengeful Ghost"> Vengeful Ghost
+                            </label>    
+                        </div>
+                    </div>
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-1-5">
+                                <input class="checkbox-input" type="checkbox" id="item-1-5" name="selection-item" value="Light Weaponry"> Light Weaponry
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-1-6">
+                                <input class="checkbox-input" type="checkbox" id="item-1-6" name="selection-item" value="Heavy Weaponry"> Heavy Weaponry
+                            </label>    
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-1-7">
+                                <input class="checkbox-input" type="checkbox" id="item-1-7" name="selection-item" value="Sharpen"> Sharpen
+                            </label>    
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-1-8">
+                                <input class="checkbox-input" type="checkbox" id="item-1-8" name="selection-item" value="Dual Wield"> Dual Wield
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="item-6" class="item">
+                <div class="item-header">
+                    Death Rounds
+                </div>
+                <div class="item-description">
+                    <p>Max HP: - 1</p>
+                    <p>Your bullets deal an additional 10 damage.</p>
+                </div>
+                <div class="item-upgrade">
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-6-1">
+                                <input class="checkbox-input" type="checkbox" id="item-6-1" name="selection-item" value="Power Shot" onclick="ToggleBoxes('power1')"> Power Shot
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-6-2">
+                                <input class="checkbox-input" type="checkbox" id="item-6-2" name="selection-item" value="Splinter"> Splinter
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-6-3">
+                                <input class="checkbox-input" type="checkbox" id="item-6-3" name="selection-item" value="Big Shot"> Big Shot
+                            </label>    
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-6-4">
+                                <input class="checkbox-input" type="checkbox" id="item-6-4" name="selection-item" value="Reaper Rounds"> Reaper Rounds
+                            </label>    
+                        </div>
+                    </div>
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-6-5">
+                                <input class="checkbox-input" type="checkbox" id="item-6-5" name="selection-item" value="Rapid Fire" onclick="ToggleBoxes('rapid1')"> Rapid Fire
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-6-6">
+                                <input class="checkbox-input" type="checkbox" id="item-6-6" name="selection-item" value="Light Bullets" onclick="ToggleBoxes('light1')"> Light Bullets
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="item-7" class="item">
+                <div class="item-header">
+                    Gun Mastery
+                </div>
+                <div class="item-description">
+                    <p>Bullet Damage: + 15%</p>
+                    <p>Fire Rate: + 15%</p>
+                    <p>Reload Rate: + 15%</p>
+                    <p>Max Ammo: + 1</p>
+                    <p>Piercing: + 1</p>
+                </div>
+                <div class="item-upgrade">
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-7-1">
+                                <input class="checkbox-input" type="checkbox" id="item-7-1" name="selection-item" value="Quick Hands" onclick="ToggleBoxes('quick1')"> Quick Hands
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-7-2">
+                                <input class="checkbox-input" type="checkbox" id="item-7-2" name="selection-item" value="Armed & Ready"> Armed & Ready
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label impact" for="item-7-3">
+                                <input class="checkbox-input" type="checkbox" id="item-7-3" name="selection-item" value="Power Shot" onclick="ToggleBoxes('power2')"> Power Shot
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-7-4">
+                                <input class="checkbox-input" type="checkbox" id="item-7-4" name="selection-item" value="Rapid Fire" onclick="ToggleBoxes('rapid2')"> Rapid Fire
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="item-2" class="item">
+                <div class="item-header">
+                    Mini Clip
+                </div>
+                <div class="item-description">
+                    <p>Reload Rate: + 100%</p>
+                    <p>Bullet Damage: + 50%</p>
+                    <p>Max Ammo: - 666</p>
+                </div>
+                <div class="item-upgrade">
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-2-1">
+                                <input class="checkbox-input" type="checkbox" id="item-2-1" name="selection-item" value="Double Shot" onclick="ToggleBoxes('double1')"> Double Shot
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-2-2">
+                                <input class="checkbox-input" type="checkbox" id="item-2-2" name="selection-item" value="Fan Fire" onclick="ToggleBoxes('fan1')"> Fan Fire
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-2-3">
+                                <input class="checkbox-input" type="checkbox" id="item-2-3" name="selection-item" value="Quick Hands" onclick="ToggleBoxes('quick2')"> Quick Hands
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-2-4">
+                                <input class="checkbox-input" type="checkbox" id="item-2-4" name="selection-item" value="Fresh Clip"> Fresh Clip
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="item-4" class="item">
+                <div class="item-header">
+                    Stand Your Ground
+                </div>
+                <div class="item-description">
+                    <p>Projectiles: + 2</p>
+                    <p>Fire Rate: + 25%</p>
+                    <p>Move Speed: - 25%</p>
+                </div>
+                <div class="item-upgrade">
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-4-1">
+                                <input class="checkbox-input" type="checkbox" id="item-4-1" name="selection-item" value="Rapid Fire" onclick="ToggleBoxes('rapid3')"> Rapid Fire
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-4-2">
+                                <input class="checkbox-input" type="checkbox" id="item-4-2" name="selection-item" value="Light Bullets" onclick="ToggleBoxes('light2')"> Light Bullets
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-4-3">
+                                <input class="checkbox-input" type="checkbox" id="item-4-3" name="selection-item" value="Rubber Bullets"> Rubber Bullets
+                            </label>    
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-4-4">
+                                <input class="checkbox-input" type="checkbox" id="item-4-4" name="selection-item" value="Siege"> Siege
+                            </label>    
+                        </div>
+                    </div>
+                    <div class="item-upgrade-tree">
+                        <div>
+                            <label class="checkbox-label" for="item-4-5">
+                                <input class="checkbox-input" type="checkbox" id="item-4-5" name="selection-item" value="Double Shot" onclick="ToggleBoxes('double2')"> Double Shot
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-4-6">
+                                <input class="checkbox-input" type="checkbox" id="item-4-6" name="selection-item" value="Fan Fire" onclick="ToggleBoxes('fan2')"> Fan Fire
+                            </label>    
+                        </div>
+                        <div>
+                            <label class="checkbox-label" for="item-4-7">
+                                <input class="checkbox-input" type="checkbox" id="item-4-7" name="selection-item" value="Split Fire"> Split Fire
+                            </label>    
+                        </div>
+                        <div>
+                            <label class="checkbox-label impact" for="item-4-8">
+                                <input class="checkbox-input" type="checkbox" id="item-4-8" name="selection-item" value="Fusilade"> Fusilade
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottom"></div>
+
+        <footer id="footer">
+            Created 2022 by Deren
+        </footer>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
