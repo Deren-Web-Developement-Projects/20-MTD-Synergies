@@ -4,7 +4,7 @@
 - A single page created to be used with the video game "20 Minutes Till Dawn".
 - Players need specific upgrades to unlock better upgrades.
 - Webpage serves as a way to track what upgrades are still needed.
-- Includes movile view support.
+- Includes mobile view support.
 
 ## Technologies & Languages
 - HTML
