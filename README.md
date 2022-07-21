@@ -12,7 +12,7 @@
 - JavaScript
 
 ## GitHub Pages Link:
-https://deren-web-developement-projects.github.io/20-MTD-Synergies/
+https://deren-web-development-projects.github.io/20-MTD-Synergies/
 
 ---
 ![Screenshot](https://github.com/Deren-Web-Developement-Projects/20-MTD-Synergies/blob/cf326a283757d9c98f57df1f234f77ef492d23e1/D0593D65-A48E-416E-874D-445058DD92E8_1_201_a.jpeg)
